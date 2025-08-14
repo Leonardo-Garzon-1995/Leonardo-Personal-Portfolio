@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leonardo Garzon — Web Developer</title>
+  <link rel="icon" href="lion-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.2.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#">LG<span class="dot">.</span></a>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="intro">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1 class="title">Leonardo Garzon</h1>
+          <p class="subtitle">Junior Web Developer — HTML • CSS • JavaScript</p>
+
+          <p class="lead">I build responsive, accessible interfaces and solid websites. I love clean UI and performance.</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn">See my work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="avatar" aria-hidden="true">LG</div>
+          <div class="card-body">
+            <p class="role">Available for freelance & remote roles</p>
+            <ul class="meta">
+              <!-- <li><strong>Location</strong><span>Italy</span></li> -->
+              <li><strong>Email</strong><span>lgarzonparada1995@gmail.com</span></li>
+            </ul>
+            <div class="socials">
+              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Repeat project items or replace with your own -->
+        <article class="project">
+          <div class="project-media">📱</div>
+          <h3>Responsive Notes App</h3>
+          <p>Vanilla JS + LocalStorage. Clean UX for quick note taking.</p>
+          <a href="#" class="project-link gitHub"><ion-icon name="logo-github"></ion-icon>  View code</a>
+          <a href="#" class="project-link live-demo"><ion-icon name="play-circle-outline"></ion-icon>  Live Demo</a>
+        </article>
+
+        <article class="project">
+          <div class="project-media">⚡</div>
+          <h3>Weather Dashboard</h3>
+          <p>React + Node backend. Deployed on AWS with CI/CD.</p>
+          <a href="#" class="project-link"><ion-icon name="logo-github"></ion-icon>  View code</a>
+          <a href="#" class="project-link live-demo" ><ion-icon name="play-circle-outline"></ion-icon>  Live Demo</a>
+        </article>
+
+        <article class="project">
+          <div class="project-media">🎬</div>
+          <h3>Portfolio CMS</h3>
+          <p>Next.js + Headless CMS. Fast, SEO-friendly portfolio site.</p>
+          <a href="#" class="project-link"><ion-icon name="logo-github"></ion-icon>  View code</a>
+          <a href="#" class="project-link live-demo"><ion-icon name="play-circle-outline"></ion-icon>  Live Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <p>I’m a junior web developer passionate about creating clean, modern, and responsive websites.  
+            I work with HTML, CSS, and JavaScript to bring ideas to life, ensuring each project looks  
+            great on any device. I’m currently expanding into full-stack development and AWS cloud integration,  
+            so I can offer even more complete solutions.
+        </p>
+        <ul class="expectation-list">
+          <li><strong>What you can expect from me:</strong></li>
+          <li>✔ Mobile-friendly layouts</li>
+          <li>✔ Fast communication and on-time delivery</li>
+          <li>✔ Willingness to go the extra mile for client satisfaction</li>
+          <li>✔ Clean, semantic, and maintainable code</li>
+          <li>Let’s work together to bring your vision to the web!</li>
+        </ul>
+        <ul>
+          <li><strong>Experience</strong> — Freelance + small agencies</li>
+          <li><strong>Specialties</strong> — HTML, CSS, JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill-chips">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact</h2>
+      <p>Interested in working together? Send a message and I’ll get back to you.</p>
+      <form class="contact-form" action="lgarzon@legionaries.org" onsubmit="">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        <button class="btn">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Leonardo Garzon — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
