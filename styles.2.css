@@ -204,6 +204,14 @@ body{
   font-weight:600
 }
 
+.project a {
+  transition: color 200ms ease;
+}
+
+.project a:hover {
+  color: #06b6d4;
+ }
+
 .live-demo {
   margin-left: 30px;
 }
@@ -214,10 +222,16 @@ body{
   gap:2rem
 }
 
+.about-grid p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
 .expectation-list li {
   list-style: none;
   margin-bottom: 5px;
-
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
 .skills .skill-chips{
